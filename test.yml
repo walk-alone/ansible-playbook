@@ -1,0 +1,8 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: Check server date
+      command: date
+    - name: Check server ip
+      command: hostname -I
